@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+* {
+    line-height: 28px;
+    font-size: 2rem;
+}
+
+h1, h2 {
+    color: #ff6b28;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 56px;
+}
+
+h2 {
+    line-height: 35px;
+    font-size: 2.8rem;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#header {
+    background-color: #ff6b28;
+    padding: 15px;
+    text-align: center;
+}
+
+#background-image {
+    background: url("images/hero_bolo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+#container {
+    max-width: 990px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.title {
+    margin-top: 100px;
+}
+
+.makings {
+    cursor: url("images/cursor_ingredientes.png"), pointer;
+}
+
+.preparation {
+    cursor: url("images/cursor_intrucoes.png"), pointer;
+}
+
+.information {
+    cursor: url("images/cursor_preparo.png"), pointer;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 70px 100px;
+    margin-bottom: 70px;
+    transition: all .5s;
+}
+
+.card:hover {
+    box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
+}
+
+button {
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #ff6b28;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+footer {
+    background-color: #ff6b28;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 1.6rem;
+    max-width: 550px;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 620px) {
+    .card {
+        padding: 10px 30px;
+    }
+}

@@ -37,6 +37,7 @@ header {
 }
 
 .container {
+    padding: 0 20px;
     margin: auto;
     max-width: 1200px;
 }
@@ -45,7 +46,8 @@ header {
     margin: 50px 0 70px 0;
 }
 
-.card {
+.cartao {
+    margin: 10px 0;
     margin: auto;
     padding: 70px;
     margin-bottom: 100px;
@@ -56,7 +58,7 @@ header {
 ;
 }
 
-.card:hover {
+.cartao:hover {
     transform: scale(1.02);
     box-shadow: 0 0 40px #ff6c2875;
 }
@@ -73,18 +75,18 @@ header {
     cursor: url("images/cursor_intrucoes.png"), auto;
 }
 
-.card h3 {
+.cartao h3 {
     margin-left: -14px;
     margin-bottom: 30px;
     font-size: 2.5rem;
 }
 
-.card ul, ol {
+.cartao ul, ol {
     padding: 0;
     list-style-position: inside;
 }
 
-.card ul, ol, li {
+.cartao ul, ol, li {
     margin-bottom: 10px;
 }
 
@@ -113,18 +115,18 @@ button img {
     margin-right: 8px;
 }
 
-.card p {
+.cartao p {
     padding-bottom: 20px;
     line-height: 20px;
 }
 
-.card p a {
+.cartao p a {
     color: #ff6b28;
     text-decoration: none;
     font-weight: 700;
 }
 
-.card p a:hover {
+.cartao p a:hover {
     text-decoration: underline;
 }
 
@@ -139,4 +141,20 @@ footer p {
     text-align: center;
     margin: auto;
     max-width: 400px;
+}
+
+@media screen and (max-width: 450px) {
+    .cartao {
+        padding: 40px;
+    }
+
+    .cartao h3 {
+        text-align: center;
+    }
+
+    .container-botao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

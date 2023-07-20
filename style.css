@@ -1,121 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
-body,html {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    font-size: 62.5%;
-}
-
 * {
-    line-height: 28px;
-    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
-h1, h2 {
+h1,h3 {
     color: #ff6b28;
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 4.8rem;
-    line-height: 56px;
-}
-
-h2 {
-    line-height: 36px;
-    font-size: 2.8rem;
-}
-
-li {
-    margin-bottom: 20px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-#header {
-    background-color: #ff6b28;
-    padding: 15px;
+header {
+    padding: 10px;
     text-align: center;
+    background-color: #ff6b28;
 }
 
-#background-image {
-    background: url("images/hero_bolo.jpg");
-    background-size: cover;
+.background-img {
+    background-image: url('images/hero_bolo.jpg');
     background-position: center;
-    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
 }
 
-#container {
-    max-width: 990px;
-    padding: 0 40px;
+.container {
     margin: auto;
+    max-width: 1200px;
 }
 
-.title {
-    margin-top: 100px;
-}
-
-.makings {
-    cursor: url("images/cursor_ingredientes.png"), pointer;
-}
-
-.preparation {
-    cursor: url("images/cursor_intrucoes.png"), pointer;
-}
-
-.information {
-    cursor: url("images/cursor_preparo.png"), pointer;
+.container h1 {
+    margin: 50px 0 70px 0;
 }
 
 .card {
-    border-radius: 20px;
-    padding: 70px 100px;
-    margin-bottom: 70px;
-    transition: all .5s;
+    margin: auto;
+    padding: 70px;
+    margin-bottom: 100px;
+    max-width: 700px;
+    border-radius: 15px;
+    transition: all 0.7s ease-in;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.212)
+;
 }
 
 .card:hover {
-    box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
+    transform: scale(1.02);
+    box-shadow: 0 0 40px #ff6c2875;
+}
+
+.ingredientes:hover {
+    cursor: url("images/cursor_ingredientes.png"), auto;
+}
+
+.modo-de-preparo:hover {
+    cursor: url("images/cursor_preparo.png"), auto;
+}
+
+.informacoes:hover {
+    cursor: url("images/cursor_intrucoes.png"), auto;
+}
+
+.card h3 {
+    margin-left: -14px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.card ul, ol {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.card ul, ol, li {
+    margin-bottom: 10px;
 }
 
 button {
-    margin: 30px 0;
-    padding: 15px;
+    box-shadow: 0 0 20px #ff6c28d8;
     background-color: #ff6b28;
-    border: 0;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: all .5s;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.7s;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 button:hover {
+    transform: scale(1.06);
+    box-shadow: none;
     cursor: pointer;
-    transform: scale(0.97);
+}
+
+button img {
+    margin-right: 8px;
+}
+
+.card p {
+    padding-bottom: 20px;
+    line-height: 20px;
+}
+
+.card p a {
+    color: #ff6b28;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card p a:hover {
+    text-decoration: underline;
 }
 
 footer {
     background-color: #ff6b28;
+    color: white;
     padding: 20px;
-    text-align: center;
 }
 
 footer p {
-    color: white;
-    font-size: 1.6rem;
-    max-width: 550px;
+    font-size: 14px;
+    text-align: center;
     margin: auto;
-}
-
-footer a {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 620px) {
-    .card {
-        padding: 10px 30px;
-    }
+    max-width: 400px;
 }

@@ -144,6 +144,10 @@ footer p {
 }
 
 @media screen and (max-width: 450px) {
+    header img {
+        width: 80%;
+    }
+
     .cartao {
         padding: 40px;
     }

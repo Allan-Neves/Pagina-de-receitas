@@ -4,7 +4,7 @@
 
 ## Demo
 
-[Clique aqui](https://allan-carlos.github.io/Pagina-de-receitas/) e você será redirecionado(a) para o site.
+[Clique aqui](https://allan-neves.github.io/Pagina-de-receitas/) e você será redirecionado(a) para o site.
 
 ## Tecnologias Usadas
 
